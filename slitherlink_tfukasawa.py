@@ -33,3 +33,21 @@ def solved(a):
         print("unsolved")
 
 solved(allink(N+1,M+1))
+ten=[[x,y]for y in range(5) for x in range(5)]
+
+def tenten(x,y):
+    return ten [(5*y)+x]
+
+newten=[]
+def draw():
+    for n in range(2):
+        if x==0 and y==0 :
+            newten.append(tenten(x+(1-n),y+n))
+        if x==4 and y==0 :
+            newten.append(tenten(x-(1*n),y+(1-n)))
+        if x==0 and y==4 :
+            newten.append(tenten(x+(1-n),y-(1*n)))
+        if x==4 and y==4 :
+            newten.append(tenten(x-n,y+(n-1)))
+    
+    
