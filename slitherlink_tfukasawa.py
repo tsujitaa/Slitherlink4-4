@@ -33,6 +33,16 @@ def solved(a):
         print("unsolved")
 
 solved(allink(N+1,M+1))
+
+
+
+
+
+
+
+
+
+
 ten=[[x,y]for y in range(5) for x in range(5)]
 
 def tenten(x,y):
