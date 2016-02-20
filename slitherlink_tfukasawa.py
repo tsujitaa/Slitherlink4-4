@@ -21,7 +21,7 @@ for n in range(4):  #DEFINE NUMBERS 0~3
         if i == "q":
             break
     
-        elif 0 <= int(i) <= M:
+        elif 0 <= int(i) <= M-1:
         
             x = int(i)
         
@@ -29,7 +29,7 @@ for n in range(4):  #DEFINE NUMBERS 0~3
         
             i = int(input())
         
-            if 0 <= i <=  N:
+            if 0 <= i <=  N-1:
 
                 y = i
 
@@ -108,7 +108,7 @@ def line_pre_false(s,t):
         judge_col[(s,t-1)] = False
     elif row[s][t] == 1:
         judge_row[(s,t)] = False
-    elif row[s-1][t] ==1:
+    elif row[s-1][t] == 1:
         judge_row[(s-1,t)] = False
     else:
         print("error")
